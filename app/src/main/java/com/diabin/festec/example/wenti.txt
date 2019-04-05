@@ -1,1 +1,2 @@
-1、WeakHashMap<String, Object> PARAMS = RestCreator.getParams(); 会不会出问题，这块逻辑有问题好像
+文件下载，创建文件失败问题；
+检查是不是边下边写磁盘的

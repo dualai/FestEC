@@ -2,7 +2,7 @@ package com.diabin.latte.net.callback;
 
 import android.os.Handler;
 
-import com.diabin.latte.app.ConfigType;
+import com.diabin.latte.app.ConfigKeys;
 import com.diabin.latte.app.Latte;
 import com.diabin.latte.net.RestCreator;
 import com.diabin.latte.ui.loader.LatteLoader;
@@ -64,7 +64,7 @@ public final class RequestCallbacks implements Callback<String> {
     }
 
     private void onRequestFinish() {
-        final long delayed = (long) Latte.getConfigurations().get(ConfigType.LOADER_DELAYED.name());
+        final long delayed = Latte.getConfiguration(ConfigKeys.LOADER_DELAYED);
         if (LOADER_STYLE != null) {
             HANDLER.postDelayed(new Runnable() {
                 @Override

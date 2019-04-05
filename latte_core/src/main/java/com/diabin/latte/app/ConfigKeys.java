@@ -1,7 +1,10 @@
 package com.diabin.latte.app;
 
-//全称初始化一次
-public enum ConfigType {
+/**
+ * Created by 傅令杰 on 2017/3/29
+ */
+
+public enum ConfigKeys {
     API_HOST,
     APPLICATION_CONTEXT,
     CONFIG_READY,

@@ -14,6 +14,8 @@ import com.diabin.latte.net.callback.IError;
 import com.diabin.latte.net.callback.IFailure;
 import com.diabin.latte.net.callback.ISuccess;
 
+import java.io.File;
+
 public class ExampleDelegate extends LatteDelegate {
     @Override
     public Object setLayout() {
@@ -27,12 +29,12 @@ public class ExampleDelegate extends LatteDelegate {
 
     //单次请求测试
     private void test() {
-        RestClient.Builder().url("http://news.baidu.com")
+        RestClient.Builder().url("http://127.0.0.1/index")
                 .loader(getContext())
                 .success(new ISuccess() {
                     @Override
                     public void onSuccess(String response) {
-//                        Toast.makeText(getContext(), response, Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(), response, Toast.LENGTH_LONG).show();
                     }
                 })
                 .error(new IError() {
@@ -55,6 +57,40 @@ public class ExampleDelegate extends LatteDelegate {
                 })
                 .build()
                 .get();
+
+
+//        RestClient.Builder().url("http://192.168.0.103/app-debug.apk")
+////                .loader(getContext())
+//                .success(new ISuccess() {
+//                    @Override
+//                    public void onSuccess(String response) {
+//                    }
+//                })
+//                .error(new IError() {
+//                    @Override
+//                    public void onError(int code, String msg) {
+//
+//                    }
+//                })
+//                .failure(new IFailure() {
+//                    @Override
+//                    public void onFailure() {
+//
+//                    }
+//                })
+//                .error(new IError() {
+//                    @Override
+//                    public void onError(int code, String msg) {
+//
+//                    }
+//                })
+//                .dir(getContext().getCacheDir().getAbsolutePath())
+//                .extension("apk")
+//                .build()
+//                .download();
+
+
+
     }
 
 

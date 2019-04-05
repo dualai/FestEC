@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 
+import com.diabin.latte.download.DownloadHandler;
 import com.diabin.latte.net.callback.IError;
 import com.diabin.latte.net.callback.IFailure;
 import com.diabin.latte.net.callback.IRequest;
@@ -26,9 +27,6 @@ import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 
-/**
- * Created by 傅令杰 on 2017/4/2
- */
 
 public final class RestClient {
 
@@ -120,6 +118,11 @@ public final class RestClient {
             case DELETE: //删
                 call = service.delete(URL, PARAMS);
                 break;
+            case UPLOAD:
+                final RequestBody requestBody = RequestBody.create(MediaType.parse(MultipartBody.FORM.toString()), FILE);
+                final MultipartBody.Part body = MultipartBody.Part.createFormData("file", FILE.getName(), requestBody);
+                call = service.upload(URL, body);
+                break;
             default:
                 break;
         }
@@ -183,6 +186,11 @@ public final class RestClient {
         request(HttpMethod.UPLOAD);
     }
 
+    public final void download() {
+        new DownloadHandler(URL, REQUEST, DOWNLOAD_DIR, EXTENSION, NAME,
+                SUCCESS, FAILURE, ERROR)
+                .handleDownload();
+    }
 
     /**
      * 建造者模式

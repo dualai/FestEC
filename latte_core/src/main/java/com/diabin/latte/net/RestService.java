@@ -44,7 +44,7 @@ public interface RestService {
     @DELETE
     Call<String> delete(@Url String url, @QueryMap WeakHashMap<String, Object> params);
 
-    @Streaming
+    @Streaming //边下载边写入磁盘
     @GET
     Call<ResponseBody> download(@Url String url, @QueryMap WeakHashMap<String, Object> params);
 
