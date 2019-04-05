@@ -10,11 +10,21 @@ import android.widget.Toast;
 
 import com.diabin.latte.delegates.LatteDelegate;
 import com.diabin.latte.net.RestClient;
+import com.diabin.latte.net.RestCreator;
 import com.diabin.latte.net.callback.IError;
 import com.diabin.latte.net.callback.IFailure;
 import com.diabin.latte.net.callback.ISuccess;
+import com.diabin.latte.net.rx.RxRestClient;
 
 import java.io.File;
+import java.util.WeakHashMap;
+
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 
 public class ExampleDelegate extends LatteDelegate {
     @Override
@@ -24,7 +34,69 @@ public class ExampleDelegate extends LatteDelegate {
 
     @Override
     public void onBindView(@Nullable Bundle savedInstanceState, @NonNull View rootView) {
-        test();
+//        test();
+//        testRx1();
+        testRx2();
+    }
+
+    private void testRx2() {
+        final String url = "http://news.baidu.com";
+        RxRestClient.Builder()
+                .url(url)
+                .build()
+                .get().subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<String>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(String s) {
+                        Toast.makeText(getContext(),s,Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+    }
+
+    private void testRx() {
+        final String url = "http://news.baidu.com";
+        final WeakHashMap<String, Object> params = new WeakHashMap<>();
+        final Observable<String> observable = RestCreator.getRxRestService().get(url, params);
+
+        observable.subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<String>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(String s) {
+                        Toast.makeText(getContext(),s,Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
     }
 
     //单次请求测试
@@ -90,14 +162,13 @@ public class ExampleDelegate extends LatteDelegate {
 //                .download();
 
 
-
     }
 
 
     /**
      * 第二种retrofit的使用
      */
-    private void testRetrofit2(){
+    private void testRetrofit2() {
 
 //        public interface PersonalProtocol {
 //            /**
