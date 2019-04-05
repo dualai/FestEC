@@ -22,14 +22,14 @@ public final class R {
         public static int fontProviderQuery = 0x7f040080;
         public static int fontStyle = 0x7f040081;
         public static int fontWeight = 0x7f040082;
-        public static int keylines = 0x7f040092;
-        public static int layout_anchor = 0x7f040094;
-        public static int layout_anchorGravity = 0x7f040095;
-        public static int layout_behavior = 0x7f040096;
-        public static int layout_dodgeInsetEdges = 0x7f0400c0;
-        public static int layout_insetEdge = 0x7f0400c9;
-        public static int layout_keyline = 0x7f0400ca;
-        public static int statusBarBackground = 0x7f040105;
+        public static int keylines = 0x7f040094;
+        public static int layout_anchor = 0x7f040096;
+        public static int layout_anchorGravity = 0x7f040097;
+        public static int layout_behavior = 0x7f040098;
+        public static int layout_dodgeInsetEdges = 0x7f0400c2;
+        public static int layout_insetEdge = 0x7f0400cb;
+        public static int layout_keyline = 0x7f0400cc;
+        public static int statusBarBackground = 0x7f04010b;
     }
     public static final class bool {
         private bool() {}
@@ -162,27 +162,27 @@ public final class R {
     public static final class style {
         private style() {}
 
-        public static int TextAppearance_Compat_Notification = 0x7f1600e7;
-        public static int TextAppearance_Compat_Notification_Info = 0x7f1600e8;
-        public static int TextAppearance_Compat_Notification_Info_Media = 0x7f1600e9;
-        public static int TextAppearance_Compat_Notification_Line2 = 0x7f1600ea;
-        public static int TextAppearance_Compat_Notification_Line2_Media = 0x7f1600eb;
-        public static int TextAppearance_Compat_Notification_Media = 0x7f1600ec;
-        public static int TextAppearance_Compat_Notification_Time = 0x7f1600ed;
-        public static int TextAppearance_Compat_Notification_Time_Media = 0x7f1600ee;
-        public static int TextAppearance_Compat_Notification_Title = 0x7f1600ef;
-        public static int TextAppearance_Compat_Notification_Title_Media = 0x7f1600f0;
-        public static int Widget_Compat_NotificationActionContainer = 0x7f160158;
-        public static int Widget_Compat_NotificationActionText = 0x7f160159;
-        public static int Widget_Support_CoordinatorLayout = 0x7f16015a;
+        public static int TextAppearance_Compat_Notification = 0x7f1600ea;
+        public static int TextAppearance_Compat_Notification_Info = 0x7f1600eb;
+        public static int TextAppearance_Compat_Notification_Info_Media = 0x7f1600ec;
+        public static int TextAppearance_Compat_Notification_Line2 = 0x7f1600ed;
+        public static int TextAppearance_Compat_Notification_Line2_Media = 0x7f1600ee;
+        public static int TextAppearance_Compat_Notification_Media = 0x7f1600ef;
+        public static int TextAppearance_Compat_Notification_Time = 0x7f1600f0;
+        public static int TextAppearance_Compat_Notification_Time_Media = 0x7f1600f1;
+        public static int TextAppearance_Compat_Notification_Title = 0x7f1600f2;
+        public static int TextAppearance_Compat_Notification_Title_Media = 0x7f1600f3;
+        public static int Widget_Compat_NotificationActionContainer = 0x7f16015c;
+        public static int Widget_Compat_NotificationActionText = 0x7f16015d;
+        public static int Widget_Support_CoordinatorLayout = 0x7f16015e;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static int[] CoordinatorLayout = { 0x7f040092, 0x7f040105 };
+        public static int[] CoordinatorLayout = { 0x7f040094, 0x7f04010b };
         public static int CoordinatorLayout_keylines = 0;
         public static int CoordinatorLayout_statusBarBackground = 1;
-        public static int[] CoordinatorLayout_Layout = { 0x10100b3, 0x7f040094, 0x7f040095, 0x7f040096, 0x7f0400c0, 0x7f0400c9, 0x7f0400ca };
+        public static int[] CoordinatorLayout_Layout = { 0x10100b3, 0x7f040096, 0x7f040097, 0x7f040098, 0x7f0400c2, 0x7f0400cb, 0x7f0400cc };
         public static int CoordinatorLayout_Layout_android_layout_gravity = 0;
         public static int CoordinatorLayout_Layout_layout_anchor = 1;
         public static int CoordinatorLayout_Layout_layout_anchorGravity = 2;

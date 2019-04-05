@@ -1,0 +1,1 @@
+1、WeakHashMap<String, Object> PARAMS = RestCreator.getParams(); 会不会出问题，这块逻辑有问题好像

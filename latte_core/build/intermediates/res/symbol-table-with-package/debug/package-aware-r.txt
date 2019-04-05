@@ -17,6 +17,8 @@ anim h_fragment_pop_enter
 anim h_fragment_pop_exit
 anim no_anim
 anim pop_exit_no_anim
+anim push_bottom_in
+anim push_bottom_out
 anim v_fragment_enter
 anim v_fragment_exit
 anim v_fragment_pop_enter
@@ -163,6 +165,8 @@ attr iconTintMode
 attr iconifiedByDefault
 attr imageButtonStyle
 attr indeterminateProgressStyle
+attr indicatorColor
+attr indicatorName
 attr initialActivityCount
 attr isLightTheme
 attr itemPadding
@@ -238,7 +242,11 @@ attr listPreferredItemPaddingRight
 attr logo
 attr logoDescription
 attr maxButtonHeight
+attr maxHeight
+attr maxWidth
 attr measureWithLargestChild
+attr minHeight
+attr minWidth
 attr multiChoiceItemLayout
 attr navigationContentDescription
 attr navigationIcon
@@ -848,6 +856,9 @@ string abc_toolbar_collapse_description
 string app_name
 string search_menu_title
 string status_bar_notification_info_overflow
+style AVLoadingIndicatorView
+style AVLoadingIndicatorView_Large
+style AVLoadingIndicatorView_Small
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1119,6 +1130,7 @@ style Theme_AppCompat_Light_Dialog_Alert
 style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
+style Theme_AppCompat_Translucent
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -1194,6 +1206,9 @@ style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 style Widget_Support_CoordinatorLayout
+style anim_panel_up_from_bottom
+style dialog
+styleable AVLoadingIndicatorView indicatorColor indicatorName maxHeight maxWidth minHeight minWidth
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

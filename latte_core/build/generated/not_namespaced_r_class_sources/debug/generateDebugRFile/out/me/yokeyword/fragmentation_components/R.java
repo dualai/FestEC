@@ -18,10 +18,10 @@ public final class R {
         public static int h_fragment_pop_exit = 0x7f010010;
         public static int no_anim = 0x7f010011;
         public static int pop_exit_no_anim = 0x7f010012;
-        public static int v_fragment_enter = 0x7f010013;
-        public static int v_fragment_exit = 0x7f010014;
-        public static int v_fragment_pop_enter = 0x7f010015;
-        public static int v_fragment_pop_exit = 0x7f010016;
+        public static int v_fragment_enter = 0x7f010015;
+        public static int v_fragment_exit = 0x7f010016;
+        public static int v_fragment_pop_enter = 0x7f010017;
+        public static int v_fragment_pop_exit = 0x7f010018;
     }
     public static final class drawable {
         private drawable() {}

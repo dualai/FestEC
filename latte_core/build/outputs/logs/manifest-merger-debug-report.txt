@@ -1,26 +1,38 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
-INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
-INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
-INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
-INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
-INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
-INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
+ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
+INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
 	package
 		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:2:5-31
 		INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml
 		INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml
-		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
+		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
 		INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml
-		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-2:34
+		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:1-9:12
 		INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:5:5-8:38
+	android:supportsRtl
+		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:8:9-35
+	android:label
+		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:7:9-41
+	android:allowBackup
+		ADDED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml:6:9-35
 uses-sdk
 INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/xuluming/Pro_xuluming/tvproject/android_high/FestEC/latte_core/src/main/AndroidManifest.xml

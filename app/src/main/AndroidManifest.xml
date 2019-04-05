@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.diabin.festec.example">
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:name=".ExampleApp"
         android:allowBackup="true"
