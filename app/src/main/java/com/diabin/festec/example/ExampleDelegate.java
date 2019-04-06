@@ -75,7 +75,7 @@ public class ExampleDelegate extends LatteDelegate {
         final Observable<String> observable = RestCreator.getRxRestService().get(url, params);
 
         observable.subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
+                .observeOn(AndroidSchedulers.mainThread()) //如果是download，写文件必须在子线程，不能这样
                 .subscribe(new Observer<String>() {
                     @Override
                     public void onSubscribe(Disposable d) {
@@ -97,6 +97,7 @@ public class ExampleDelegate extends LatteDelegate {
 
                     }
                 });
+
     }
 
     //单次请求测试
