@@ -10,7 +10,7 @@ public class LLog {
         if (!isTrace) {
             Log.d("Latte", args);
         } else {
-            Logger.d(args);
+            Logger.t("Latte").d(args);
         }
     }
 
@@ -18,8 +18,12 @@ public class LLog {
         if (!isTrace) {
             Log.e("Latte", args);
         } else {
-            Logger.e(args);
+            Logger.t("Latte").e(args);
         }
+    }
+
+    public static void json(String args) {
+        Logger.t("Latte").json(args);
     }
 
     public static void d(String args) {
@@ -29,4 +33,6 @@ public class LLog {
     public static void e(String args) {
         Log.e("Latte", args);
     }
+
+
 }

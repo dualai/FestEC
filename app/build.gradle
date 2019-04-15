@@ -27,7 +27,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
-    api project(':latte_ec')
+    implementation project(':latte_ec')
     annotationProcessor project(':latte_compiler')
 
 }

@@ -12,8 +12,8 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static int shadow_bottom = 0x7f090064;
-        public static int shadow_left = 0x7f090065;
-        public static int shadow_right = 0x7f090066;
+        public static int shadow_bottom = 0x7f09006d;
+        public static int shadow_left = 0x7f09006e;
+        public static int shadow_right = 0x7f09006f;
     }
 }

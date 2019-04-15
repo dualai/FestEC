@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/latte_compiler" />
             <option value="$PROJECT_DIR$/latte_core" />
             <option value="$PROJECT_DIR$/latte_ec" />
+            <option value="$PROJECT_DIR$/latte_ui" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
