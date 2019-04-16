@@ -22,10 +22,14 @@ public class ExampleActivity extends ProxyActivity {
 //                        Manifest.permission.WRITE_EXTERNAL_STORAGE},
 //                2001);
 
+
+
+
     }
 
     @Override
     public LatteDelegate setRootDelegate() {
         return new SignUpDelegate();
+//        return new ExampleDelegate();
     }
 }

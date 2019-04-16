@@ -180,7 +180,7 @@ public  class RxRestClient {
             return this;
         }
 
-        public final RxRestClientBuilder params(String key, Object value) {
+        public final RxRestClientBuilder param(String key, Object value) {
             mParams.put(key, value);
             return this;
         }

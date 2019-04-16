@@ -226,7 +226,7 @@ public final class RestClient {
             return this;
         }
 
-        public final RestClientBuilder params(String key, Object value) {
+        public final RestClientBuilder param(String key, Object value) {
             mParams.put(key, value);
             return this;
         }

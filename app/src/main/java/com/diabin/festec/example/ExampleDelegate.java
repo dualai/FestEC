@@ -34,9 +34,9 @@ public class ExampleDelegate extends LatteDelegate {
 
     @Override
     public void onBindView(@Nullable Bundle savedInstanceState, @NonNull View rootView) {
-//        test();
+        test();
 //        testRx1();
-        testRx2();
+//        testRx2();
     }
 
     private void testRx2() {
@@ -102,7 +102,8 @@ public class ExampleDelegate extends LatteDelegate {
 
     //单次请求测试
     private void test() {
-        RestClient.Builder().url("http://127.0.0.1/index")
+//        RestClient.Builder().url("http://news.baidu.com")
+        RestClient.Builder().url("data.json")
                 .loader(getContext())
                 .success(new ISuccess() {
                     @Override
@@ -119,12 +120,6 @@ public class ExampleDelegate extends LatteDelegate {
                 .failure(new IFailure() {
                     @Override
                     public void onFailure() {
-
-                    }
-                })
-                .error(new IError() {
-                    @Override
-                    public void onError(int code, String msg) {
 
                     }
                 })

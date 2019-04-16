@@ -45,8 +45,8 @@ public class SignInDelegate extends LatteDelegate {
         if (checkForm()) {
             RestClient.Builder()
                     .url("http://192.168.56.1:8080/RestDataServer/api/user_profile.php")
-                    .params("email", mEmail.getText().toString())
-                    .params("password", mPassword.getText().toString())
+                    .param("email", mEmail.getText().toString())
+                    .param("password", mPassword.getText().toString())
                     .success(new ISuccess() {
                         @Override
                         public void onSuccess(String response) {
